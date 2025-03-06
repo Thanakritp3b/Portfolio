@@ -167,9 +167,9 @@ export default function Projects() {
 
 
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const y = useTransform(scrollYProgress, [0, 1], [100, -100])
-
-
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0])
 
 
