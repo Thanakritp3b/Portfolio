@@ -190,7 +190,7 @@ export default function Contact() {
                   <CheckCircle className="w-6 h-6 sm:w-8 sm:h-8 text-[#d35400]" />
                 </div>
                 <h4 className="text-lg sm:text-xl font-bold text-[#5e3023] mb-2 font-western">MESSAGE SENT!</h4>
-                <p className="text-[#8b4513] text-sm sm:text-base">Thank you for your message. I'll get back to you soon.</p>
+                <p className="text-[#8b4513] text-sm sm:text-base">Thank you for your message. I&apos;ll get back to you soon.</p>
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">

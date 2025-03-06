@@ -3,7 +3,7 @@
 import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 import Image from "next/image"
-import { Code2, Globe, Brain, Server, Database, Cpu, Github } from "lucide-react"
+import { Code2, Globe, Brain, Server, Database, Cpu } from "lucide-react"
 import React from "react"
 
 const skills = [
