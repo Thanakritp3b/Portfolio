@@ -4,8 +4,7 @@ import type React from "react"
 
 import { useState, useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
-import Image from "next/image"
-import { Send, Loader2, Mail, Phone, MapPin, Github, Linkedin, CheckCircle, MessageSquare, Instagram } from "lucide-react"
+import { Send, Loader2, Mail, Phone, MapPin, Github, Linkedin, CheckCircle, Instagram } from "lucide-react"
 
 export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -80,6 +79,7 @@ export default function Contact() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
+      style={{ y, opacity }}
     >
       <div className="absolute inset-0 bg-wanted-poster opacity-5 pointer-events-none"></div>
 

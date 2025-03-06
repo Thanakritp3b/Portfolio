@@ -31,7 +31,7 @@ export default function Hero() {
     }, 3000)
 
     return () => clearInterval(interval)
-  }, [])
+  }, [images.length])
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -61,7 +61,7 @@ export default function Hero() {
         element.removeEventListener("mouseleave", handleMouseLeave)
       }
     }
-  }, [])
+  }, [images.length])
 
   const socialLinks = [
     { 

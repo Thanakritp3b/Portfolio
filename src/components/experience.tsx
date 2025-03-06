@@ -59,6 +59,7 @@ export default function Experience() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
+      style={{ y, opacity }}
     >
       <div className="absolute inset-0 bg-wanted-poster opacity-5 pointer-events-none"></div>
 
