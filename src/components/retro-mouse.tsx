@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import Image from "next/image"
 
 export default function RetroMouse() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })

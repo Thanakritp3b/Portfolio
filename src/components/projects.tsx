@@ -235,9 +235,11 @@ export default function Projects() {
               </div>
 
               <div className="mb-4 sm:mb-6 rounded-md overflow-hidden border-2 border-[#8b4513]">
-                <img
+                <Image
                   src={projects[selectedProject].imageUrl}
                   alt={projects[selectedProject].title}
+                  width={800}
+                  height={400}
                   className="w-full h-40 sm:h-48 object-cover"
                 />
               </div>

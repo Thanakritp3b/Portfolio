@@ -3,7 +3,7 @@
 import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 import Image from "next/image"
-import { Code2, Globe, Brain, Server, Database, Cpu, Star } from "lucide-react"
+import { Code2, Globe, Brain, Server, Database, Cpu, Github } from "lucide-react"
 import React from "react"
 
 const skills = [
@@ -65,6 +65,7 @@ export default function Skills() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
+      style={{ y, opacity }}
     >
       <div className="absolute inset-0 bg-wanted-poster opacity-5 pointer-events-none"></div>
 
