@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Font face definitions are now handled by next/font/local */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  cursor: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}
+
+.font-western {
+  font-family: var(--font-western, serif);
+}
+
+.font-pixel {
+  font-family: var(--font-pixel, monospace);
+}
+
+.font-retro {
+  font-family: var(--font-western, serif);
+}
+
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, #8b4513 1px, transparent 1px),
+    linear-gradient(to bottom, #8b4513 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-wanted-poster {
+  background-image: url("/wanted-poster-bg.svg");
+  background-repeat: repeat;
+}
+
+/* Custom cursors */
+
