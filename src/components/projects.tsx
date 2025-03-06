@@ -205,14 +205,23 @@ export default function Projects() {
       <AnimatePresence>
         {selectedProject !== null && projects[selectedProject] && (
           <motion.div
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#5e3023]/80 backdrop-blur-md"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-[#5e3023]/90 backdrop-blur-sm overflow-hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setSelectedProject(null)}
+            style={{ 
+              position: 'fixed', 
+              top: 0, 
+              left: 0, 
+              right: 0, 
+              bottom: 0,
+              width: '100vw',
+              height: '100vh'
+            }}
           >
             <motion.div
-              className="bg-[#f5f0e1] rounded-md p-4 sm:p-6 md:p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto border-4 border-[#8b4513]"
+              className="bg-[#f5f0e1] rounded-md p-4 sm:p-6 md:p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto border-4 border-[#8b4513] m-4"
               initial={{ scale: 0.9, y: 20 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.9, y: 20 }}
